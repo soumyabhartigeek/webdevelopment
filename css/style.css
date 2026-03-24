@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common class */
+.container{
+    max-width: 1460px;
+    margin: 0 auto;
+    width: 100%;
+}
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 163px;
+    display: block;
+}
+h1,.heading-1{
+    font-size: 72px ;
+    font-weight: 500;
+    color:#070e55;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+h2,.heading-2{
+    font-size: 60px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+h3,.heading-3{
+    font-size: 50px ;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+h4,.heading-4{
+    font-size: 40px ;
+    font-weight: 250;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+h5,.heading-5{
+    font-size: 30px ;
+    font-weight: 200;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+h6,.heading-6{
+    font-size: 20px ;
+    font-weight: 150;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+p{
+    font-size: 12px ;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0 0 20px;
+    line-height: 1.2 ;
+    text-transform: capitalize;
+}
+.text{
+    font-size: 25px ;
+    font-weight: 100;
+    color: #060c49;
+    margin: 0 0 20px;
+    line-height: 1.2 ;
+    letter-spacing: 15px;
+    text-transform: capitalize;
+}
+.line{
+    font-size: 30px ;
+    font-weight: 100;
+    color: #060c49;
+    margin: 0 0 20px;
+    line-height: 2 ;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+.cmn-gap{
+    padding: 80px 0;
+}
+/* navbar strats */
+.nav-links li a{
+    display: block;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1.2px;
+}
+.nav-links li a:hover{
+    color: #d74c6a;
+}
+.cmn-btn{
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 53px;
+    color: #ffffff;
+    background-color: rgb(36, 137, 180);
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.cmn-btn:hover{
+    background-color: #10b0b0;
+    color: #ffffff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 0 50px;
+}
+.nav-links{
+    display: flex;
+    margin-left: auto;
+}
+.nav-links li{
+    margin: 0 36px 0 0;
+}
+.header{
+     background-color: rgb(7, 34, 80);
+}
+/* nav bar ends */
+/* Hero Section start */
+.hero{
+    min-height:100vh;
+    background: url(../banner\ img.png);
+    display: flex;
+    align-items:center;
+    background-position: center;
+    background-size:cover;
+    padding-left: 50px;
+}
+.outline{
+    color: #050938;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 2.0px;
+    text-transform: capitalize;
+    font-weight: 200;
+    border:1px solid #050938;
+}
+/* Hero Section end */
+/* About Us start */
+.about-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+   
+}
+
+    /* IMAGE + GRADIENT */
+    .about{
+    background: 
+            linear-gradient(
+        to top,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0.3)
+    ),
+        url('../about\ imgg.png') no-repeat;
+}
+.about-card{
+    background: #0a2a43;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.span-text{
+    font-size: 20px ;
+    font-weight: 100;
+    color: #030948;
+    margin: 0 0 20px;
+    line-height: 1.2 ;
+    text-transform: capitalize;
+}
+.about-text{
+    font-size: 20px ;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0 0 20px;
+    line-height: 1.2 ;
+    text-transform: capitalize;
+}
+.left,.right{
+    width: 50%;
+    padding: 0 43px ;
+}
+ 
+/* About Us end */
+/* Service start */
+.services {
+  
+    background: #0b2a4a;
+    padding: 70px 0;
+    color: white;
+}
+
+/* MAIN ROW */
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.left-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    width: 467px;
+    height: 323px;
+    background: linear-gradient(#2f6edb, #1c4f8a);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+
+
+#icon {
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+/* RIGHT SIDE */
+.right-content {
+    width: 500px;
+}
+
+.right-content h5 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.right-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    margin-bottom: 20px;
+}
+/* Service end */
+
+/*card start*/ 
+.card-child{
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* IMAGE + GRADIENT */
+    background: 
+        linear-gradient(to right, rgba(61,143,194,0.6), rgba(61,143,194,0.9)),
+        url('../img.png');
+
+    background-size: cover;
+    background-position: center;
+}
+.card-text{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.card-text span{
+    display: block;
+}
+.cta-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #ffffff;
+}
+/*card end*/ 
+
+
+/* footer start */
+.footer-link{
+    display: flex;
+}
+.footer-link li {
+    margin-right: 10px;
+}
+.footer-child{
+    display: flex;
+    border-bottom: 0.1px solid #ddd;
+}
+.cmn-footer {
+    width: 25%;
+    padding: 0 20px;
+    
+}
+.footer-head {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+ul li{
+    margin-bottom: 10px;
+}
+ul li a{
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.footer{
+    background-color: rgb(3, 13, 59);
+    padding: 80px 0;
+
+}
+.cmn-footer .p{
+    color: #ffffff;
+}
+#text{
+    color: #ffffff;
+}
+.footer-bottom{
+    display: flex;
+      justify-content: center;
+}
+.footer-text{
+    font-size: 16px ;
+    font-weight: 100;
+    color: #ffffff;
+    line-height: 4 ;
+    text-transform: capitalize;
+}
+
+/* footer end */
