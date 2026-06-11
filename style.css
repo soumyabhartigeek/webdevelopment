@@ -5,28 +5,20 @@
     font-family:Arial, sans-serif;
 }
 
-body{
-    display:flex;
-    justify-content:center;
-    padding:20px;
-    background:#f5f5f5;
-}
-
 .invoice{
     width:900px;
-    border:4px solid #000;
-    background:white;
-    padding:10px;
+    margin:20px auto;
+    border:2px solid #000;
 }
 
 .header{
     padding:20px;
-    border:2px solid #000;
     min-height:140px;
+    border-bottom:2px solid #000;
 }
 
 .header h1{
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .info-table{
@@ -34,16 +26,25 @@ body{
     border-collapse:collapse;
 }
 
-.info-table td{
+.info-table > tbody > tr > td{
     border:2px solid #000;
     padding:15px;
     vertical-align:top;
 }
 
-.info-table .title{
+.invoice-details{
+    width:100%;
+}
+
+.invoice-details td{
+    border:none;
+    padding:6px 0;
+}
+
+.title{
     text-align:center;
-    font-weight:bold;
     font-size:20px;
+    font-weight:bold;
 }
 
 .bill-section{
@@ -51,59 +52,48 @@ body{
     border-collapse:collapse;
 }
 
-.bill-section td{
+.bill-section td,
+.bill-section th{
     border:2px solid #000;
-    padding:25px;
-    vertical-align:top;
+    padding:15px;
 }
 
-.bill-section h3{
-    margin-bottom:10px;
+.bill-title{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
 }
 
-.item-table{
+.items{
     width:100%;
     border-collapse:collapse;
 }
 
-.item-table th,
-.item-table td{
+.items th,
+.items td{
     border:2px solid #000;
     padding:12px;
 }
 
-.item-table th{
+.items th{
     text-align:center;
-}
-
-.desc{
-    width:60%;
-}
-
-.center{
-    text-align:center;
-}
-
-.right{
-    text-align:right;
 }
 
 .subtotal{
+    text-align:center;
     font-weight:bold;
-    font-size:20px;
+}
+
+.amount{
+    font-weight:bold;
+    text-align:right;
 }
 
 .footer{
-    height:250px;
-    border:2px solid #000;
-    border-top:none;
+    height:220px;
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-.footer h1{
-    font-size:60px;
+    font-size:48px;
     font-weight:bold;
 }
-
